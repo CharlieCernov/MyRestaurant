@@ -7,9 +7,13 @@
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/bordabotao.xml" value="0.173" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/bordacomida.xml" value="0.173" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/bordapreco.xml" value="0.16" />
+        <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/bordaquant.xml" value="0.172" />
+        <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/favorite.xml" value="0.172" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.173" />
+        <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/img.xml" value="0.172" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/activity_janela_pedido.xml" value="0.25" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/activity_pedidos.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/modelo_pedidos.xml" value="0.25" />
       </map>
     </option>
