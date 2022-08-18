@@ -28,6 +28,14 @@ public class pedidos extends AppCompatActivity {
 
     String rating [] = {
             ",4,5","5,0"};
+
+    String precoProduto[] = {
+            "32,00","40,00"
+    };
+
+    String quantidade [] = {
+            "1","2"
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +44,7 @@ public class pedidos extends AppCompatActivity {
     ModelComp = findViewById(R.id.ModelComp);
 
     AdaptadorRecr adapter = new AdaptadorRecr();
+
 
     ModelComp.setAdapter(adapter);
     }
@@ -58,18 +67,23 @@ public class pedidos extends AppCompatActivity {
         }
 
         @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            TextView Descricaofood, Titulofood,preco,quantidade,ModeloStars;
+        public View getView(int i, View v, ViewGroup viewGroup) {
+            TextView txtDescricaofood, txtTitulofood,txtpreco,txtquantidade,txtModeloStars;
 
-            View view1 = getLayoutInflater().inflate(R.layout.modelo_pedidos,null);
+            View view = getLayoutInflater().inflate(R.layout.modelo_pedidos,null);
 
-            Descricaofood = view.findViewById(R.id.Descricaofood);
-            Titulofood = view.findViewById(R.id.Titulofood);
-            preco = view.findViewById(R.id.preco);
-            quantidade = view.findViewById(R.id.quantidade);
-            ModeloStars = view.findViewById(R.id.ModeloStars);
+            txtDescricaofood = view.findViewById(R.id.Descricaofood);
+            txtTitulofood = view.findViewById(R.id.Titulofood);
+            txtpreco = view.findViewById(R.id.preco);
+            txtquantidade = view.findViewById(R.id.quantidade);
+            txtModeloStars = view.findViewById(R.id.ModeloStars);
 
-            return null;
+            txtDescricaofood.setText(descricaofood[i]);
+            txtpreco.setText(precoProduto[i]);
+            txtModeloStars.setText(rating[i]);
+            txtTitulofood.setText(tituloFood[i]);
+            txtquantidade.setText(quantidade[i]);
+            return view;
         }
     }
 
