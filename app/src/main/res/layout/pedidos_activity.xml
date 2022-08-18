@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pedidos"
+    android:background="@drawable/image"
     android:orientation="vertical">
 
     <LinearLayout
@@ -24,6 +25,43 @@
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:id="@+id/ModelComp"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="289dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5"
+            android:background="@drawable/prc" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:src="@drawable/cartoons"/>
+
+
+
+    </LinearLayout>
+
+
+
 
 
 
