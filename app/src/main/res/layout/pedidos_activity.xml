@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pedidos"
     android:background="@drawable/image"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".pedidos">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -15,19 +15,19 @@
 
         <ImageView
             android:id="@+id/imgVoltar"
-            android:layout_marginTop="15dp"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:background="@drawable/ic_baseline_keyboard_arrow_left"
-            android:layout_marginRight="30dp"/>
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_baseline_keyboard_arrow_left" />
 
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@drawable/mesacor"
             android:layout_marginLeft="0dp"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mesacor" />
     </LinearLayout>
 
     <ListView
@@ -36,85 +36,127 @@
         android:layout_height="200dp" />
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subtotalvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Total:"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginLeft="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------------------"
+            android:textColor="#fff"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginLeft="45dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/pagamentoMaos"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="6dp"
-            android:background="@drawable/pagmao"/>
+            android:background="@drawable/pagmao" />
 
         <TextView
             android:layout_width="225dp"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="4dp"
+            android:background="@drawable/bordapreco"
             android:gravity="center"
             android:text="Pagamento em mãos"
-            android:background="@drawable/bordapreco"
-            android:textStyle="bold"
+            android:textColor="#000"
             android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbnpagamentoCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/carto00att"/>
+        <TextView
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartão de crédito"
+            android:background="@drawable/bordapreco"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
             android:textColor="#000"/>
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/rbnpagamentoCard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <ImageView
-        android:layout_width="256dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:background="@drawable/bordapreco"
-        android:src="@drawable/teste202020" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
 
 
         <Button
             android:id="@+id/btnfinalizarPedido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Finalizar pedido"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
             android:backgroundTint="#FF0000"
             android:gravity="center"
-            android:textStyle="bold"
+            android:text="Finalizar pedido"
             android:textColor="#fff"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="13dp"/>
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/btnpedidoEntregue"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:text="Pedido entregue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
             android:backgroundTint="#FF0000"
             android:gravity="center"
-            android:textStyle="bold"
+            android:text="Pedido entregue"
             android:textColor="#fff"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="30dp"/>
+            android:textStyle="bold"/>
     </LinearLayout>
 
 </LinearLayout>
