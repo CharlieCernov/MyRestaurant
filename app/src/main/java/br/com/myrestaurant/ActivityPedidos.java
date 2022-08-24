@@ -9,10 +9,14 @@ import android.widget.Adapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class pedidos extends AppCompatActivity {
+import java.util.List;
+
+public class ActivityPedidos extends AppCompatActivity {
 
     ListView ModelComp;
+    TextView ValueTotal;
 
 
 
@@ -42,14 +46,23 @@ public class pedidos extends AppCompatActivity {
         setContentView(R.layout.pedidos_activity);
 
     ModelComp = findViewById(R.id.ModelComp);
+    ValueTotal = findViewById(R.id.valuetotal);
 
     AdaptadorRecr adapter = new AdaptadorRecr();
 
 
     ModelComp.setAdapter(adapter);
+
+
     }
 
     public class AdaptadorRecr extends BaseAdapter{
+
+        public String preco;
+
+
+
+
 
         @Override
         public int getCount() {
@@ -83,8 +96,21 @@ public class pedidos extends AppCompatActivity {
             txtModeloStars.setText(rating[i]);
             txtTitulofood.setText(tituloFood[i]);
             txtquantidade.setText(quantidade[i]);
+            txtpreco.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                   preco = txtpreco.getText().toString();
+                   ValueTotal.setText("R$ "+ preco);
+
+
+                }
+            });
             return view;
         }
+
     }
+
+
 
 }

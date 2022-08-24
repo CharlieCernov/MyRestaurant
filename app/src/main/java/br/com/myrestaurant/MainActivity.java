@@ -15,9 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        teste1=findViewById(R.id.preco);
-        teste2=findViewById(R.id.valuetotal);
-
-        teste1+teste2
+        this.teste1 = (TextView) findViewById(R.id.valuetotal);
     }
 }
