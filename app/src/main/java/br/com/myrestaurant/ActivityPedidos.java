@@ -17,6 +17,9 @@ public class ActivityPedidos extends AppCompatActivity {
 
     ListView ModelComp;
     TextView ValueTotal;
+    private TextView preco2;
+    private TextView preco;
+
 
 
 
@@ -31,7 +34,7 @@ public class ActivityPedidos extends AppCompatActivity {
             "Melhor queijo do mundo em 8 pedaços", "Melhor radius do mundo em 8 pedaços"};
 
     String rating [] = {
-            ",4,5","5,0"};
+            "4,5","5,0"};
 
     String precoProduto[] = {
             "32,00","40,00"
@@ -47,6 +50,8 @@ public class ActivityPedidos extends AppCompatActivity {
 
     ModelComp = findViewById(R.id.ModelComp);
     ValueTotal = findViewById(R.id.valuetotal);
+    preco = findViewById(R.id.preco);
+    preco2 = findViewById(R.id.preco2);
 
     AdaptadorRecr adapter = new AdaptadorRecr();
 
@@ -58,7 +63,8 @@ public class ActivityPedidos extends AppCompatActivity {
 
     public class AdaptadorRecr extends BaseAdapter{
 
-        public String preco;
+
+        String preco;
 
 
 
@@ -102,7 +108,7 @@ public class ActivityPedidos extends AppCompatActivity {
 
                    preco = txtpreco.getText().toString();
                    ValueTotal.setText("R$ "+ preco);
-
+                   ValueTotal.setText(preco.toString());
 
                 }
             });
