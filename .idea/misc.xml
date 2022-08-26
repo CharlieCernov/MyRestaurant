@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable-v24/borda_button_login.xml" value="0.1585" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.173" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/bordabotao.xml" value="0.15" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/bordacomida.xml" value="0.173" />
@@ -12,6 +13,7 @@
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/ic_baseline_keyboard_arrow_left.xml" value="0.1145" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.173" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/drawable/img.xml" value="0.172" />
+        <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/activity_all_qr_code.xml" value="0.25" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/activity_janela_pedido.xml" value="0.25" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/charlie.bcamarante/Documents/ProjetoAndroid/MyRestaurant/app/src/main/res/layout/activity_pedidos.xml" value="0.27291666666666664" />

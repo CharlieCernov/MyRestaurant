@@ -117,6 +117,13 @@ public class ActivityPedidos extends AppCompatActivity {
 
     }
 
+    public class Arrayteste {
+        public void main(String[] args) {
+            int n1;
+
+        }
+    }
+
 
 
 }
