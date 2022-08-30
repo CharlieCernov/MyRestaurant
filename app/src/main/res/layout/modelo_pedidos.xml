@@ -58,7 +58,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/preco"
+                    android:id="@+id/preco10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bordapreco"
@@ -176,7 +176,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/preco2"
+                    android:id="@+id/preco20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bordapreco"

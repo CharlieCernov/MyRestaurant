@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +20,8 @@ public class ActivityPedidos extends AppCompatActivity {
     TextView ValueTotal;
     private TextView preco2;
     private TextView preco;
+    private TextView valortotal;
+    private Button btnCalcular;
 
 
 
@@ -50,8 +53,20 @@ public class ActivityPedidos extends AppCompatActivity {
 
     ModelComp = findViewById(R.id.ModelComp);
     ValueTotal = findViewById(R.id.valuetotal);
-    preco = findViewById(R.id.preco);
-    preco2 = findViewById(R.id.preco2);
+    preco = findViewById(R.id.preco10);
+    preco2 = findViewById(R.id.preco20);
+    valortotal = findViewById(R.id.valuetotal);
+
+    btnCalcular.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            int preco10 = Integer.parseInt(String.valueOf(preco.getText()));
+            int preco20 = Integer.parseInt(String.valueOf(preco2.getText()));
+            int valuetotal= preco10+preco20;
+            btnCalcular.setText("Valor total"+valuetotal);
+
+        }
+    });
 
     AdaptadorRecr adapter = new AdaptadorRecr();
 
@@ -93,7 +108,7 @@ public class ActivityPedidos extends AppCompatActivity {
 
             txtDescricaofood = view.findViewById(R.id.Descricaofood);
             txtTitulofood = view.findViewById(R.id.Titulofood);
-            txtpreco = view.findViewById(R.id.preco);
+            txtpreco = view.findViewById(R.id.preco10);
             txtquantidade = view.findViewById(R.id.quantidade);
             txtModeloStars = view.findViewById(R.id.ModeloStars);
 
